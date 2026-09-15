@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: enterprise-agentic-ai
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+agent:
+  ollama:
+    base-url: http://localhost:11434
+    model: qwen3:8b
+  max-steps: 6
