@@ -1,6 +1,6 @@
 # Level 5.0 Enterprise Agentic AI — Spring Boot
 
-Java 21 + Spring Boot + Ollama/Qwen3 + RAG + MCP-style tools + Supervisor Agent + memory + guardrails + Actuator.
+Java 27 + Spring Boot + Ollama/Qwen3 + RAG + MCP-style tools + Supervisor Agent + memory + guardrails + Actuator.
 
 ## Run
 `ollama pull qwen3:8b`
