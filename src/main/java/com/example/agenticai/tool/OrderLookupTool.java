@@ -1,1 +1,20 @@
-package com.example.agenticai.tool; import org.springframework.stereotype.Component; import java.util.*; @Component public class OrderLookupTool implements McpTool {public String name(){return "order_lookup";} public String description(){return "Look up order status by order_id";} public Object execute(Map<String,Object>a){return switch(String.valueOf(a.get("order_id"))){case "O1001"->Map.of("id","O1001","status","SHIPPED","amount",1250);case "O1002"->Map.of("id","O1002","status","PROCESSING","amount",499);case "O1003"->Map.of("id","O1003","status","DELIVERED","amount",2100);default->Map.of("error","Order not found");};}}
+package com.example.agenticai.tool;
+import org.springframework.stereotype.Component;
+import java.util.*;
+@Component public class OrderLookupTool implements McpTool {
+    public String name() {
+        return "order_lookup";
+    }
+    public String description() {
+        return "Look up order status by order_id";
+    }
+    public Object execute(Map<String,Object>a) {
+        return switch (String.valueOf(a.get("order_id"))) {
+            case "O1001"->Map.of("id","O1001","status","SHIPPED","amount",1250);
+            case "O1002"->Map.of("id","O1002","status","PROCESSING","amount",499);
+            case "O1003"->Map.of("id","O1003","status","DELIVERED","amount",2100);
+            default->Map.of("error","Order not found");
+        }
+        ;
+    }
+}

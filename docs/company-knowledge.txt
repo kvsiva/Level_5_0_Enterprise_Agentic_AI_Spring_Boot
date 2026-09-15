@@ -1,0 +1,10 @@
+Enterprise Engineering Knowledge
+New backend services should use Java 21 unless compatibility requires otherwise.
+New Java backend services should use Spring Boot 3.x.
+Services should be independently deployable.
+Kafka can be used for asynchronous event-driven integration.
+Docker packages services and Kubernetes/OpenShift can orchestrate containers.
+Production APIs require authentication and authorization.
+Secrets must not be hard-coded.
+RAG grounds agents in organization knowledge.
+MCP-style tools expose controlled business operations to agents.
